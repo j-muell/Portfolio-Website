@@ -84,7 +84,6 @@ body{
 .main h4 span{
     color: #ffb742;
     text-decoration: underline;
-
 }
 
 .main p.title{
@@ -108,14 +107,17 @@ body{
 }
 
 .separator{
-    padding: 40px 148px 0;
+    padding: 10px 20px;
+    margin: 50px 50px 30px;
+    background: rgba(255, 255, 255, 0.08);
+    display: inline-block;
+    border-radius: 12px;
 }
 
 .separator h4{
-    font-size: 28px;
-    color: #fff;
+    font-size: 24px;
+    color: #ffb742;
     font-weight: 600;
-    margin-bottom: 30px;
 }
 
 .featured{
@@ -133,7 +135,7 @@ body{
 .featured .item img{
     width: 320px;
     height: 200px;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
 .featured .item .details h3{
@@ -169,4 +171,365 @@ body{
     width: 700px;
     text-align: justify;
     color: #fff;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+.skills .left{
+    width: 600px;
+}
+
+.skills .left .info h3{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.skills .left .info p{
+    color: #ccc;
+    font-size: 14px;
+}
+
+.skills .left .info p a{
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.skills .left .info p a:hover{
+    color: #ffb742;
+    transition: color 0.3s ease-in-out;
+}
+
+.skills .right{
+    width: 420px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills .center{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+}
+
+.skills .center ul{
+    list-style: none;
+}
+
+.skills .right .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #383e45;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.skills .right .item i{
+    font-size: 34px;
+    color: #fff;
+}
+
+footer{
+    position: relative;
+    background: #1c1c1c;
+    padding: 80px 50px 40px;
+    margin-top: 100px;
+}
+
+footer .contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background-color: #ffb742;
+    padding: 30px 25px;
+    border-radius: 15px;
+    width: 50%;
+    top: -16%;
+    left: 25%;
+}
+
+footer .contact p {
+    font-size: 13px;
+    width: 35%;
+}
+
+footer .contact button{
+    background: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+}
+
+footer .contact button:hover{
+    background-color: #fff;
+    border-color: #fff;
+}
+
+footer .cols{
+    display: flex;
+    align-items: start;
+}
+
+footer .cols .about-cols{
+    flex: 2;
+}
+
+footer .cols .about-cols h3{
+    color: #ffb742;
+    margin-bottom: 20px;
+}
+
+footer .cols .about-cols p{
+    color: #ccc;
+    font-size: 13px;
+}
+
+footer .cols .links-col{
+    flex: 2;
+}
+
+footer .cols .links-col h4{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+footer .cols .links-col a{
+    display: block;
+    text-decoration: none;
+    color: #7b7b7b;
+    font-size: 14px;
+    line-height: 26px;
+    transition: color 0.3s ease;
+}
+
+footer .cols .links-col a:hover{
+    color: #ffb742;
+}
+
+footer .cols .links-col a i{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+    .featured, .separator{
+        padding: 10px 20px;
+    }
+
+    .skills .center{
+        padding: 0 5px;
+    }
+
+}
+
+@media screen and (max-width: 1100px){
+    .skills{
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .skills .left{
+        width: 500px;
+    }
+
+    .skills .left .info h3{
+        font-size: 22px;
+    }
+
+    .skills.left .info p{
+        font-size: 12px;
+    }
+
+    footer{
+        margin-top: 150px;
+    }
+
+    footer .contact{
+        width: 90%;
+        left: 5%;
+        top: -20%;
+    }
+
+    footer .cols{
+        flex-wrap: wrap;
+    }
+
+    footer .cols .about-cols{
+        flex-basis: 50%;
+    }
+
+    footer .cols .links-col{
+        flex-basis: 15%;
+    }
+
+    .separator, .featured{
+        padding: 10px, 10px;
+    }
+
+    .featured .item{
+        flex-direction: column;
+        padding: 0 20px 30px;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 780px){
+    .navbar button{
+        display: inline-block;
+    }
+
+    .navbar h2{
+        display: none;
+    }
+
+    .main h4{
+        font-size: 36px;
+    }
+
+    .main p.title{
+        font-size: 36px;
+    }
+
+    .main p.subtitle{
+        font-size: 14px;
+    }
+
+    .navbar{
+        justify-content: center;
+    }
+
+    .resume-btn{
+        background: #ffb742;
+        padding: 5px 15px; /* increases the size of the button background / button by giving padding */
+        margin: 10px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer; /* This is for cursor hover */
+        border-radius: 6px; /* this is for rounding corners */
+        transition: background-color 0.3s ease;
+    }
+
+    .featured, .separator{
+        padding: 10px 10px;
+    }
+
+    .featured .item{
+        flex-direction: column;
+        padding: 0 20px 30px;
+    }
+
+    .featured .item img{
+        width: 100%;
+        height: auto;
+    }
+
+    .featured .item .details h3{
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .featured .item .details .item-info .year-badge{
+        font-size: 12px;
+    }
+
+    .featured .item .details .item-info h4{
+        font-size: 15px;
+    }
+
+    .featured .item .details p{
+        width: 100%;
+        font-size: 14px;
+        flex-basis: 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 690px) {
+    .resume-btn{
+        background: #ffb742;
+        margin: 10px;
+        padding: 5px 5px; /* increases the size of the button background / button by giving padding */
+        border: none;
+        font-size: 16px;
+        cursor: pointer; /* This is for cursor hover */
+        border-radius: 6px; /* this is for rounding corners */
+        transition: background-color 0.3s ease;
+    }
+
+    .navbar ul li a{
+        font-size: 14px;
+    }
+
+    .main{
+        margin-top: 50px;
+        height: 550px;
+        justify-content: start;
+    }
+
+    .main h4{
+        font-size: 20px;
+    }
+
+    .main p.title{
+     font-size: 28px;   
+    }
+
+    .main p.subtitle{
+        font-size: 12px;
+    }
+
+    .main img{
+        margin-top: 40px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .skills{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills .right{
+        justify-content: center;
+    }
+
+    .skills .left .info h3{
+        font-size: 20px;
+    }
+
+    footer .contact{
+        top: -8%;
+    }
+
+    footer .cols{
+        justify-content: center;
+    }
+
+    footer .cols .about-cols{
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+
+    footer .cols .links-col{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
 }
