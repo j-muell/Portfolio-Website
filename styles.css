@@ -32,6 +32,10 @@ body{
     display: flex;
 }
 
+.navbar .selected{
+    color: #ffb742;
+}
+
 .navbar ul li{
     list-style: none;
 }
@@ -324,8 +328,122 @@ footer .cols .links-col a i{
     font-size: 20px;
 }
 
+/* WORKS PAGE */
+
+.page-title{
+    padding: 80px 234px 20px;
+    width: 100%;
+    color: #fff;
+    margin: 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.content{
+    padding: 30px 148px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.works-list .item{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.works-list .item img{
+    width: 350px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.works-list .item .details h3{
+    font-size: 30px;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.works-list .item .details .item-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+
+}
+
+.works-list .item .details .item-info .year-badge{
+    background-color: #ffb742;
+    color: #212529;
+    padding: 2px 14px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.works-list .item .details .item-info h4{
+    color: #ccc;
+    font-size: 18px;
+}
+
+.works-list .item .details p{
+    width: 700px;
+    text-align: justify;
+    color: #fff;
+}
+
+/* Main Project / Single Work Page */
+
+.content .work-info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 970px;
+}
+
+.content .work-info .year-badge{
+    background-color: #ffb742;
+    color: #212529;
+    padding: 2px 14px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.content .work-info .category{
+    color: #7b7b7b;
+    font-size: 18px;
+}
+
+.content>p{
+    width: 970px;
+    font-size: 15px;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.content>img{
+    width: 970px;
+    margin: 30px 0;
+    border-radius: 20px;
+}
+
+.content>h1,
+.content>h2,
+.content>h3{
+    width: 970px;
+    color: #fff;
+}
+
+/* WIDTH CORRECTION RESPONSIVE */
+
 @media screen and (max-width: 1400px) {
-    .featured, .separator{
+    .featured, .separator, .content{
         padding: 10px 20px;
     }
 
@@ -375,17 +493,24 @@ footer .cols .links-col a i{
         flex-basis: 15%;
     }
 
-    .separator, .featured{
+    .separator, .featured, .content{
         padding: 10px, 10px;
     }
 
-    .featured .item{
+    .featured .item, .content .works-list .item{
         flex-direction: column;
         padding: 0 20px 30px;
     }
 
+    .content .work-info,
+    .content>p,
+    .content>img,
+    .content>h1,
+    .content>h2,
+    .content>h3{
+        width: 100%;
 
-
+    }
 
 }
 
@@ -426,39 +551,47 @@ footer .cols .links-col a i{
         transition: background-color 0.3s ease;
     }
 
-    .featured, .separator{
+    .featured, .separator, .content{
         padding: 10px 10px;
     }
 
-    .featured .item{
+    .featured .item, .content .works-list .item{
         flex-direction: column;
         padding: 0 20px 30px;
     }
 
-    .featured .item img{
+    .featured .item img, .content .works-list .item img{
         width: 100%;
         height: auto;
     }
 
-    .featured .item .details h3{
+    .featured .item .details h3, .content .works-list .item .details h3{
         font-size: 24px;
         margin-bottom: 12px;
     }
 
-    .featured .item .details .item-info .year-badge{
+    .featured .item .details .item-info .year-badge, .content .works-list .item .details .item-info .year-badge{
         font-size: 12px;
     }
 
-    .featured .item .details .item-info h4{
+    .featured .item .details .item-info h4, .content .works-list .item .details .item-info h4{
         font-size: 15px;
     }
 
-    .featured .item .details p{
+    .featured .item .details p, .content .works-list .item .details p{
         width: 100%;
         font-size: 14px;
         flex-basis: 50%;
     }
 
+    .content{
+        padding: 30px 20px 60px;
+    }
+
+    .page-title{
+        font-size: 28px;
+        padding: 80px 10px 10px;
+    }
 
 }
 
@@ -516,7 +649,7 @@ footer .cols .links-col a i{
     }
 
     footer .contact{
-        top: -8%;
+        top: -10%;
     }
 
     footer .cols{
