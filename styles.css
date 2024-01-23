@@ -288,6 +288,12 @@ footer .contact button:hover{
     border-color: #fff;
 }
 
+footer .contact button a{
+    text-decoration: none;
+    color: #000;
+    /* padding: 8px 20px; */
+}
+
 footer .cols{
     display: flex;
     align-items: start;
@@ -333,7 +339,81 @@ footer .cols .links-col a i{
     font-size: 20px;
 }
 
-/* WORKS PAGE */
+/*                                          CONTACT FORM */
+
+.contact-form h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffb742;
+    margin: 20px 20px 40px;
+}
+
+.contact-form .subject{
+    display: flex;
+    justify-content: center;
+    margin: 20px 120px 40px;
+}
+
+.contact-form .subject input{
+    background-color: #ccc;
+    border-radius: 6px;
+}
+
+.contact-form .subject input::placeholder{
+    color: #000;
+    padding: 0 10px;
+}
+
+.contact-form .subject label{
+    color: #fff;
+    margin-right: 10px;
+}
+
+.contact-form .body{
+    display: flex;
+    justify-content: center;
+    margin: 20px 120px 40px;
+}
+
+.contact-form .body label{
+    color: #fff;
+    margin-right: 20px;
+}
+
+.contact-form .body textarea{
+    background-color: #ccc;
+    border-radius: 6px;
+}
+
+.contact-form .body textarea::placeholder{
+    color: #000;
+    padding: 5px 10px;
+}
+
+.contact-on-contact-form{
+    display: none;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+}
+
+.submit input{
+    padding: 5px 5px;
+    background-color: #ffb742;
+    cursor: pointer;
+    border-radius: 12px;  
+    transition: background-color 0.3s ease;
+    margin: 0 0 0 20px;
+}
+
+.submit input:hover{
+    background-color: #fb8c00;
+}
+
+/*                                            WORKS PAGE */
 
 .page-title{
     padding: 80px 234px 20px;
@@ -444,6 +524,8 @@ footer .cols .links-col a i{
     width: 970px;
     color: #fff;
 }
+
+
 
 /* WIDTH CORRECTION RESPONSIVE */
 
