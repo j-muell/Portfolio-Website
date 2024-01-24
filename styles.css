@@ -694,7 +694,7 @@ footer .cols .links-col a i{
     }
 
     .navbar ul li a{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .main{
@@ -725,7 +725,7 @@ footer .cols .links-col a i{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 20px 130px 40px;
+        margin: 20px 120px 40px;
         margin-top: 50px;
     }
 
