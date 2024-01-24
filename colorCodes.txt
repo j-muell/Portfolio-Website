@@ -1,0 +1,10 @@
+Yellow Light: ffb742
+Yellow Dark: fb8c00
+
+Green pallette:
+
+Dark: 40513B
+Forest: 609966
+Light/Pastelle: 9DC08B
+Washed out greenwhite: EDF1D6
+

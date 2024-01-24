@@ -23,7 +23,7 @@ body{
 }
 
 .navbar h2 a{
-    color: #ffb742;
+    color: #609966;
     font-weight: 600;
     text-decoration: none;
 }
@@ -33,7 +33,7 @@ body{
 }
 
 .navbar .selected{
-    color: #ffb742;
+    color: #609966;
 }
 
 .navbar ul li{
@@ -49,7 +49,7 @@ body{
 }
 
 .navbar ul li:hover a{ /*hover over navbar text*/
-    color: #ffb742;
+    color: #609966;
 }
 
 .navbar ul li:last-child a{ /* gives zero margin to the last child of the list */
@@ -57,7 +57,7 @@ body{
 }
 
 .resume-btn {
-    background: #ffb742;
+    background: #609966;
     padding: 6px 30px; /* increases the size of the button background / button by giving padding */
     border: none;
     font-size: 16px;
@@ -72,7 +72,7 @@ body{
 }
 
 .resume-btn:hover {
-    background: #fb8c00;
+    background: #40513B;
 }
 
 .main{
@@ -91,7 +91,7 @@ body{
 }
 
 .main h4 span{
-    color: #ffb742;
+    color: #609966;
     text-decoration: underline;
 }
 
@@ -125,7 +125,7 @@ body{
 
 .separator h4{
     font-size: 24px;
-    color: #ffb742;
+    color: #609966;
     font-weight: 600;
 }
 
@@ -163,7 +163,7 @@ body{
 }
 
 .featured .item .details .item-info .year-badge{
-    background-color: #ffb742;
+    background-color: #609966;
     color: #212529;
     padding: 2px 14px;
     border-radius: 16px;
@@ -210,7 +210,7 @@ body{
 }
 
 .skills .left .info p a:hover{
-    color: #ffb742;
+    color: #609966;
     transition: color 0.3s ease-in-out;
 }
 
@@ -261,7 +261,7 @@ footer .contact{
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    background-color: #ffb742;
+    background-color: #609966;
     padding: 30px 25px;
     border-radius: 15px;
     width: 50%;
@@ -304,7 +304,7 @@ footer .cols .about-cols{
 }
 
 footer .cols .about-cols h3{
-    color: #ffb742;
+    color: #609966;
     margin-bottom: 20px;
 }
 
@@ -332,7 +332,7 @@ footer .cols .links-col a{
 }
 
 footer .cols .links-col a:hover{
-    color: #ffb742;
+    color: #609966;
 }
 
 footer .cols .links-col a i{
@@ -345,7 +345,7 @@ footer .cols .links-col a i{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #ffb742;
+    color: #609966;
     margin: 20px 20px 40px;
 }
 
@@ -402,7 +402,7 @@ footer .cols .links-col a i{
 
 .submit input{
     padding: 5px 5px;
-    background-color: #ffb742;
+    background-color: #609966;
     cursor: pointer;
     border-radius: 12px;  
     transition: background-color 0.3s ease;
@@ -410,7 +410,7 @@ footer .cols .links-col a i{
 }
 
 .submit input:hover{
-    background-color: #fb8c00;
+    background-color: #40513B;
 }
 
 /*                                            WORKS PAGE */
@@ -462,7 +462,7 @@ footer .cols .links-col a i{
 }
 
 .works-list .item .details .item-info .year-badge{
-    background-color: #ffb742;
+    background-color: #609966;
     color: #212529;
     padding: 2px 14px;
     border-radius: 16px;
@@ -492,7 +492,7 @@ footer .cols .links-col a i{
 }
 
 .content .work-info .year-badge{
-    background-color: #ffb742;
+    background-color: #609966;
     color: #212529;
     padding: 2px 14px;
     border-radius: 16px;
@@ -628,7 +628,7 @@ footer .cols .links-col a i{
     }
 
     .resume-btn{
-        background: #ffb742;
+        background: #609966;
         padding: 5px 15px; /* increases the size of the button background / button by giving padding */
         margin: 10px;
         border: none;
@@ -684,7 +684,7 @@ footer .cols .links-col a i{
 
 @media screen and (max-width: 690px) {
     .resume-btn{
-        background: #ffb742;
+        background: #609966;
         margin: 10px;
         padding: 5px 5px; /* increases the size of the button background / button by giving padding */
         border: none;
