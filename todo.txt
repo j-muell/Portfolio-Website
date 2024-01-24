@@ -1,0 +1,4 @@
+add small blurb in featured works: 
+
+"Below are some of my more prominent works. If you want to see my major project, click here 
+or navigate to my project above."
