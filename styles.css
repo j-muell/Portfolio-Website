@@ -393,6 +393,10 @@ footer .cols .links-col a i{
     display: none;
 }
 
+.contact-form .subject .sub-input-small-devices input{
+    display: none;
+}
+
 .submit{
     display: flex;
     justify-content: center;
@@ -407,9 +411,15 @@ footer .cols .links-col a i{
     margin: 0 0 0 20px;
 }
 
+.submit input{
+    color: #000;
+}
+
 .submit input:hover{
     background-color: #40513B;
 }
+
+
 
 /*                                            WORKS PAGE */
 
@@ -766,7 +776,7 @@ footer .cols .links-col a i{
     }
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 440px) {
     .resume-btn{
         background: #609966;
         margin: 10px;
@@ -784,6 +794,10 @@ footer .cols .links-col a i{
         margin-right: 12px;
     }
 
+    .resume-btn{
+        margin-right: 0;
+    }
+
     .main{
         margin-top: 50px;
         height: 550px;
@@ -795,7 +809,7 @@ footer .cols .links-col a i{
     }
 
     .main p.title{
-     font-size: 20px;   
+        font-size: 20px;   
     }
 
     .main p.subtitle{
@@ -814,6 +828,88 @@ footer .cols .links-col a i{
         align-items: center;
         margin: 20px 100px 40px;
         margin-top: 50px;
+    }
+
+    .contact-form h4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #609966;
+        margin: 20px 20px 40px;
+        font-size: 13px;
+    }
+    
+    .contact-form .subject{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px 40px;
+    }
+    
+    .contact-form .subject input{
+        background-color: #ccc;
+        border-radius: 6px;
+        display: none;
+    }
+
+    .contact-form .subject .sub-input-small-devices input{
+        display: flex;
+    }
+
+    .contact-form .subject .sub-input-small-devices input::placeholder{
+        color: #ccc;
+    }
+    
+    .contact-form .subject input::placeholder{
+        color: #000;
+        padding: 0 10px;
+    }
+    
+    .contact-form .subject label{
+        color: #fff;
+        margin-right: 10px;
+    }
+    
+    .contact-form .body{
+        display: flex;
+        justify-content: center;
+        margin: 20px 20px 40px;
+    }
+    
+    .contact-form .body label{
+        color: #fff;
+        margin-right: 20px;
+    }
+    
+    .contact-form .body textarea{
+        background-color: #ccc;
+        border-radius: 6px;
+    }
+    
+    .contact-form .body textarea::placeholder{
+        color: #000;
+        padding: 5px 10px;
+    }
+    
+    .contact-on-contact-form{
+        display: none;
+    }
+    
+    .submit{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .submit input{
+        padding: 5px 5px;
+        background-color: #609966;
+        cursor: pointer;
+        border-radius: 12px;  
+        transition: background-color 0.3s ease;
+        margin: 0 0 0 20px;
+    }
+    
+    .submit input:hover{
+        background-color: #40513B;
     }
 
 }
